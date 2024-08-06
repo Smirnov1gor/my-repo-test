@@ -21,5 +21,4 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: true
           VALIDATE_CLANG_FORMAT: true
-          FILTER_REGEX_EXCLUDE: ".*tools/third_party.*"
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
