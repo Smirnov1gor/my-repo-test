@@ -8,7 +8,7 @@ on:
 
 jobs:
   clang-format-check:
-    runs-on: ${{ github.repository_owner == "Smirnov1gor" && "ubuntu-latest" || "service" }}
+    runs-on: ${{ github.repository_owner == 'Smirnov1gor' && 'ubuntu-latest' || 'service' }}
     steps:
       - name: "Checkout Code"
         uses: "actions/checkout@v4"
