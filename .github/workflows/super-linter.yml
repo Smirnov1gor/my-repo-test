@@ -9,8 +9,6 @@ on:
 permissions: "read-all"
 
 jobs:
-  permissions:
-    statuses: "write"
   clang-format-check:
     runs-on: [ "ubuntu-latest" ]
     steps:
