@@ -6,11 +6,11 @@ on:
   pull_request:
     branches: [ "*" ]
 
-permissions: "read-all"
-
 jobs:
   clang-format-check:
     runs-on: [ "ubuntu-latest" ]
+    permissions:
+      statuses: "write"
     steps:
       - name: "Checkout Code"
         uses: "actions/checkout@v4"
