@@ -11,7 +11,10 @@ permissions: "read-all"
 jobs:
   clang-format-check:
     runs-on: [ "ubuntu-latest" ]
+    # Grant status permission for MULTI_STATUS
     permissions:
+      contents: "read"
+      packages: "read"
       statuses: "write"
     steps:
       - name: "Checkout Code"
