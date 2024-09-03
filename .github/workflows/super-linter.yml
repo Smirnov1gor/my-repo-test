@@ -5,6 +5,7 @@ on:
     branches: [ "develop" ]
   pull_request:
     branches: [ "*" ]
+    paths: [ "sources/tests/**" ]
 
 permissions: "read-all"
 
